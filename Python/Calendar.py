@@ -1,31 +1,31 @@
 print('''
-from calendar import *                        # 拡張機能calendar使用
-from datetime import *                        # 拡張機能datetime使用
+from calendar import *                        # 拡張機能calendarを使用
+from datetime import *                        # 拡張機能datetimeを使用
 
-class Calendar:                               # カレンダーオブジェクト作成
-    def this_month(self):                     # → 今月のカレンダー表示機能作成
-        setfirstweekday(6)                    # → → 開始曜日設定
-        self.today = date.today()             # → → 今日取得
-        self.year = self.today.year           # → → 今年取得
-        self.month = self.today.month         # → → 今月取得
-        self.x = month(self.year, self.month) # → → カレンダー作成
-        print(self.x)                         # → → カレンダー表示
+class Calendar:                               # カレンダーオブジェクトを作成
+    def this_month(self):                     # → 今月のカレンダー表示機能を作成
+        setfirstweekday(6)                    # → → 今月の開始曜日を設定
+        self.today = date.today()             # → → 今日の日付を取得
+        self.year = self.today.year           # → → 今日の年を取得
+        self.month = self.today.month         # → → 今日の月を取得
+        self.x = month(self.year, self.month) # → → カレンダーを作成
+        print(self.x)                         # → → カレンダーを表示
 
-calendar = Calendar()                         # カレンダーオブジェクト取得
-calendar.this_month()                         # 今月のカレンダー表示機能使用
+calendar = Calendar()                         # カレンダーオブジェクトを取得
+calendar.this_month()                         # 今月のカレンダー表示機能を使用
 ''')
 
-from calendar import *                        # 拡張機能calendar使用
-from datetime import *                        # 拡張機能datetime使用
+from calendar import *                        # 拡張機能calendarを使用
+from datetime import *                        # 拡張機能datetimeを使用
 
-class Calendar:                               # カレンダーオブジェクト作成
-    def this_month(self):                     # → 今月のカレンダー表示機能作成
-        setfirstweekday(6)                    # → → 開始曜日設定
-        self.today = date.today()             # → → 今日取得
-        self.year = self.today.year           # → → 今年取得
-        self.month = self.today.month         # → → 今月取得
-        self.x = month(self.year, self.month) # → → カレンダー作成
-        print(self.x)                         # → → カレンダー表示
+class Calendar:                               # カレンダーオブジェクトを作成
+    def this_month(self):                     # → 今月のカレンダー表示機能を作成
+        setfirstweekday(6)                    # → → 今月の開始曜日を設定
+        self.today = date.today()             # → → 今日の日付を取得
+        self.year = self.today.year           # → → 今日の年を取得
+        self.month = self.today.month         # → → 今日の月を取得
+        self.x = month(self.year, self.month) # → → カレンダーを作成
+        print(self.x)                         # → → カレンダーを表示
 
-calendar = Calendar()                         # カレンダーオブジェクト取得
-calendar.this_month()                         # 今月のカレンダー表示機能使用
+calendar = Calendar()                         # カレンダーオブジェクトを取得
+calendar.this_month()                         # 今月のカレンダー表示機能を使用
