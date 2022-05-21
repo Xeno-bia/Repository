@@ -1,28 +1,27 @@
-print('''
-from XXXX import *                            # 拡張機能XXXXを使用
+'''
+from X import *            #拡張
+class X:                   #クラス
+    def __init__(self, X): #情報
+    def X(self, X):        #機能
+X = X(X)                   #オブジェクト
+X.X                        #情報
+X.X(X)                     #機能
+'''
 
-class XXXX:                                   # XXXXオブジェクトを作成
-    def XXXX(self):                           # → XXXX機能を作成
-        XXXX                                  # → → XXXXを設定
-        XXXX                                  # → → XXXXを作成
-        XXXX                                  # → → XXXXを取得
-        print(XXXX)                           # → → XXXXを表示
+#----------#
+# Calendar #
+#----------#
+from datetime import *
+from calendar import *
 
-XXXX = XXXX()                                 # XXXXオブジェクトを取得
-XXXX.XXXX()                                   # XXXX機能を使用
-''')
+class Calendar:
+    def __init__(self):
+        self.y = date.today().year
+        self.m = date.today().month
 
-from calendar import *                        # 拡張機能calendarを使用
-from datetime import *                        # 拡張機能datetimeを使用
+    def this_month(self):
+        setfirstweekday(6)
+        print(month(self.y, self.m))
 
-class Calendar:                               # カレンダーオブジェクトを作成
-    def this_month(self):                     # → 今月のカレンダー表示機能を作成
-        setfirstweekday(6)                    # → → 今月の開始曜日を設定
-        self.today = date.today()             # → → 今日の日付を取得
-        self.year = self.today.year           # → → 今日の年を取得
-        self.month = self.today.month         # → → 今日の月を取得
-        self.x = month(self.year, self.month) # → → カレンダーを作成
-        print(self.x)                         # → → カレンダーを表示
-
-calendar = Calendar()                         # カレンダーオブジェクトを取得
-calendar.this_month()                         # 今月のカレンダー表示機能を使用
+calendar = Calendar()
+calendar.this_month()
