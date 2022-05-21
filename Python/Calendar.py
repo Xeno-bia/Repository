@@ -20,7 +20,7 @@ calendar.this_month()
 '''
 from lib import *            # ライブラリ(拡張)
 
-class Cls():                 # クラス(設計図)
+class Cls(sup):              # クラス(設計図)
     def __init__(self, arg): #   変数(情報)
     def func(self, arg):     #   関数(機能)
 
