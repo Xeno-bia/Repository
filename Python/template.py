@@ -1,54 +1,58 @@
-'''
-from library import *             # library
+# comment                         # コメント
 
-class Class(super):               # class
-    def __init__(self, argument): #   variable
-    def method(self, argument):   #   method
+from library import *             # ライブラリ
 
-object = Class(argument)          # object
-object.variable                   #   variable
-object.method(argument)           #   method
-'''
+class Class(super):               # クラス
+    def __init__(self, argument): # 変数
+        pass
+    def method(self, argument):   # メソッド
+        pass
 
-'''
-#comment                     # comment
+instance = Class(argument)        # インスタンス
+instance.variable                 # 変数
+instance.method(argument)         # メソッド
 
-True, False                  # boolean
-0                            # integer
-0.0                          # floating point number
-range(start, stop, step)     # range
-f'string'                    # string
-[value]                      # list
-{key: value}                 # dictionary
-container[start: stop: step] # slice
+True, False                       # 真偽値
+0                                 # 整数
+0.0                               # 小数
+range(start, stop, step)          # 連番
+f'string'                         # 文字列
+[value]                           # 配列
+{key: value}                      # 辞書
+container[start: stop: step]      # 抽出
 
-x + x                        # addition
-x - x                        # subtraction
-x * x                        # multiplication
-x ** x                       # power
-x / x                        # division
-x % x                        # modulo
-x == x                       # equal
-x < x                        # less than
-x <= x                       # less than or equal
-x > x                        # greater than
-x >= x                       # greater than or equal
-x in x                       # in
-x and x                      # and
-x or x                       # or
-not x                        # not
+x + x                             # 加算・連結
+x - x                             # 減算
+x * x                             # 乗算・繰り返し
+x ** x                            # 冪乗
+x / x                             # 除算
+x // x                            # 整数除算
+x % x                             # 剰余算
+x == x                            # 等価
+x < x                             # 未満
+x <= x                            # 以下
+x > x                             # 超過
+x >= x                            # 以上
+x in x                            # 包含
+x and x                           # 論理積
+x or x                            # 論理和
+not x                             # 論路否定
 
-if condition:                # branch
-elif condition:              # branch
-else:                        # branch
+if condition:                     # 分岐
+    pass
+elif condition:
+    pass
+else:
+    pass
 
-for variable in container:   # loop
-    continue                 # continue
-    break                    # break
+for variable in container:        # ループ
+    pass
+    continue                      # スキップ
+    break                         # 中断
 
-while condition:             # loop
-    continue                 # continue
-    break                    # break
+while condition:                  # ループ
+    pass
+    continue                      # スキップ
+    break                         # 中断
 
-> py program.py              # execution
-'''
+# > py program.py                 # 実行
