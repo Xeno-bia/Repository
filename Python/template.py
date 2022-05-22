@@ -50,14 +50,14 @@ elif condition:
 else:
     pass
 
-for variable in container:        # ループ
+for variable in container:        # コンテナループ
     pass
-    continue                      # スキップ
-    break                         # 中断
+    continue
+    break
 
-while condition:                  # ループ
+while condition:                  # 条件ループ
     pass
-    continue                      # スキップ
-    break                         # 中断
+    continue
+    break
 
 # > py program.py                 # 実行
