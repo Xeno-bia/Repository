@@ -1,7 +1,7 @@
 # cmt
 
 import lib
-import math, random, time, calendar, datetime
+import math, random, time, calendar, datetime, fractions, sys, os
 
 class Cls(sup):
     def __init__(self, arg):
@@ -84,4 +84,19 @@ datetime.datetime.now().hour
 datetime.datetime.now().minute
 datetime.datetime.now().second
 
-# > py prog.py
+fractions.Fraction(nume, deno)
+
+sys.version
+sys.platform
+sys.argv
+
+os.system(cmd)
+os.name()
+os.walk(dir)
+os.getcwd()
+os.mkdir(dir)
+os.rename(old, new)
+os.rmdir(dir)
+os.remove(file)
+
+# > py file
