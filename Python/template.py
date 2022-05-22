@@ -1,63 +1,87 @@
-# comment                         # コメント
+# cmt
 
-# 拡張
-from library import *             # ライブラリ
+import lib
+import math, random, time, calendar, datetime
 
-# クラス
-class Class(super):               # クラス
-    def __init__(self, argument): # 変数
+class Cls(sup):
+    def __init__(self, arg):
         pass
-    def method(self, argument):   # メソッド
+    def method(self, arg):
         pass
 
-instance = Class(argument)        # インスタンス
-instance.variable                 # 変数
-instance.method(argument)         # メソッド
+ins = Cls(arg)
+ins.var
+ins.meth(arg)
 
-# 型
-True, False                       # 真偽値
-0                                 # 整数
-0.0                               # 小数
-range(start, stop, step)          # 連番
-f'string'                         # 文字列
-[value]                           # 配列
-{key: value}                      # 辞書
-container[start: stop: step]      # 抽出
+True, False
+int(num)
+float(num)
+range(bgn, end, step)
+str(f'str')
+list([val])
+dict({key: val})
+ctn[bgn: end: step]
 
-# 演算子
-x + x                             # 加算・連結
-x - x                             # 減算
-x * x                             # 乗算・繰り返し
-x ** x                            # 冪乗
-x / x                             # 除算
-x // x                            # 整数除算
-x % x                             # 剰余算
-x == x                            # 等価
-x < x                             # 未満
-x <= x                            # 以下
-x > x                             # 超過
-x >= x                            # 以上
-x in x                            # 包含
-x and x                           # 論理積
-x or x                            # 論理和
-not x                             # 論路否定
+x + x
+x - x
+x * x
+x ** x
+x / x
+x // x
+x % x
+x == x
+x < x
+x <= x
+x > x
+x >= x
+x in x
+x and x
+x or x
+not x
 
-# 制御
-if condition:                     # 分岐
+if cond:
     pass
-elif condition:
+elif cond:
     pass
 else:
     pass
 
-for variable in container:        # コンテナループ
+for var in ctn:
     pass
     continue
     break
 
-while condition:                  # 条件ループ
+while cond:
     pass
     continue
     break
 
-# > py program.py                 # 実行
+math.inf
+math.pi
+math.e
+math.sin(num)
+math.tan(num)
+math.cos(num)
+math.factorial(num)
+math.gcd(num, num)
+math.lcm(num, num)
+math.log(num, num)
+
+random.choice(ctn)
+random.shuffle(ctn)
+random.randint(num, num)
+
+time.sleep(num)
+
+calendar.calendar(num)
+calendar.month(num, num)
+
+datetime.datetime.now()
+datetime.datetime.now().year
+datetime.datetime.now().month
+datetime.datetime.now().day
+datetime.datetime.now().hour
+datetime.datetime.now().minute
+datetime.datetime.now().second
+
+# > py prog.py
