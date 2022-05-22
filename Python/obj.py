@@ -50,10 +50,9 @@ math.e,            # ネイピア数
 math.sin(5),       # サイン
 math.tan(5),       # コサイン
 math.cos(5),       # タンジェント
-math.radians(5),   #
-math.factorial(5), #
-math.gcd(5, 5),    #
-math.lcm(5, 5),    #
-math.log(5, 5),    #
+math.factorial(5), # 階乗
+math.gcd(5, 5),    # 最大公約数
+math.lcm(5, 5),    # 最小公倍数
+math.log(5, 5),    # 対数
 sep = '\n'
 )
