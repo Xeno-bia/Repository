@@ -1,7 +1,9 @@
 # comment                         # コメント
 
+# 拡張
 from library import *             # ライブラリ
 
+# クラス
 class Class(super):               # クラス
     def __init__(self, argument): # 変数
         pass
@@ -12,6 +14,7 @@ instance = Class(argument)        # インスタンス
 instance.variable                 # 変数
 instance.method(argument)         # メソッド
 
+# 型
 True, False                       # 真偽値
 0                                 # 整数
 0.0                               # 小数
@@ -21,6 +24,7 @@ f'string'                         # 文字列
 {key: value}                      # 辞書
 container[start: stop: step]      # 抽出
 
+# 演算子
 x + x                             # 加算・連結
 x - x                             # 減算
 x * x                             # 乗算・繰り返し
@@ -38,6 +42,7 @@ x and x                           # 論理積
 x or x                            # 論理和
 not x                             # 論路否定
 
+# 制御
 if condition:                     # 分岐
     pass
 elif condition:
