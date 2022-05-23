@@ -9,7 +9,6 @@ import torch
 import PIL
 import openpyxl
 import cv2
-import PyInstaller
 import PySimpleGUI
 import janome
 import bottle

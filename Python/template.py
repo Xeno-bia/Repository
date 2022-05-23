@@ -1,7 +1,6 @@
 # comment
 
 import library
-import math, random, time, calendar, datetime, fractions, sys, os, webbrowser
 
 class Class(super):
     def __init__(self, argument):
@@ -102,4 +101,6 @@ os.remove(file)
 webbrowser.get(browser).open(url)
 webbrowser.get(browser).open_new_tab(url)
 
-# > py file
+# > pip install pyinstaller
+# > pip install pyinstaller
+# > pyinstaller file --onefile (--noconsole)
