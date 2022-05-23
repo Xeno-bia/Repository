@@ -84,21 +84,22 @@ datetime.datetime.now().hour
 datetime.datetime.now().minute
 datetime.datetime.now().second
 
-fractions.Fraction(nume, deno)
+fractions.Fraction(numerator, denominator)
 
 sys.version
 sys.platform
 sys.argv
 
-os.system(cmd)
+os.system(command)
 os.name()
-os.walk(dir)
+os.walk(directory)
 os.getcwd()
-os.mkdir(dir)
+os.mkdir(directory)
 os.rename(old, new)
-os.rmdir(dir)
+os.rmdir(directory)
 os.remove(file)
 
-webbrowser.open(url, num)
+webbrowser.get(browser).open(url)
+webbrowser.get(browser).open_new_tab(url)
 
 # > py file
