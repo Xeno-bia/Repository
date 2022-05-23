@@ -67,14 +67,14 @@ math.gcd(num, num)
 math.lcm(num, num)
 math.log(num, num)
 
-random.choice(ctn)
-random.shuffle(ctn)
-random.randint(num, num)
+random.choice(container)
+random.shuffle(container)
+random.randint(begin, end)
 
-time.sleep(num)
+time.sleep(second)
 
-calendar.calendar(num)
-calendar.month(num, num)
+calendar.calendar(year)
+calendar.month(year, month)
 
 datetime.datetime.now()
 datetime.datetime.now().year
