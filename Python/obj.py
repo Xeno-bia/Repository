@@ -1,5 +1,4 @@
 '''
-import numpy
 import scipy
 import pandas
 import matplotlib
@@ -28,5 +27,4 @@ import MeCab
 import playsound
 import statistics
 import sympy
-import urllib
 '''

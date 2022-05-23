@@ -1,25 +1,25 @@
-# comment
+# コメント
 
-import library
+import ライブラリ
 
-class Class(super):
-    def __init__(self, argument):
-        pass
-    def method(self, argument):
-        pass
+class クラス(親クラス):
+    def __init__(self, 引数):
+        処理
+    def メソッド(self, 引数):
+        処理
 
-instance = Class(argument)
-instance.variable
-instance.method(argument)
+インスタンス = クラス(引数)
+インスタンス.変数
+インスタンス.メソッド(引数)
 
 True, False
-int(number)
-float(number)
-range(begin, end, step)
-str(f'string')
-list([value])
-dict({key: value})
-container[begin: end: step]
+int(数値)
+float(数値)
+range(開始, 終了, 間隔)
+str(f'文字列')
+list([値])
+dict({キー: 値})
+コンテナ[開始: 終了: 間隔]
 
 x + x
 x - x
@@ -38,42 +38,42 @@ x and x
 x or x
 not x
 
-if condition:
-    pass
-elif condition:
-    pass
+if 条件:
+    処理
+elif 条件:
+    処理
 else:
-    pass
+    処理
 
-for variable in container:
-    pass
+for 変数 in コンテナ:
+    処理
     continue
     break
 
-while condition:
-    pass
+while 条件:
+    処理
     continue
     break
 
 math.inf
 math.pi
 math.e
-math.sin(number)
-math.tan(number)
-math.cos(number)
-math.factorial(number)
-math.gcd(number, number)
-math.lcm(number, number)
-math.log(number, base)
+math.sin(数値)
+math.tan(数値)
+math.cos(数値)
+math.factorial(数値)
+math.gcd(数値, 数値)
+math.lcm(数値, 数値)
+math.log(真数, 底数)
 
-random.choice(container)
-random.shuffle(container)
-random.randint(begin, end)
+random.choice(コンテナ)
+random.shuffle(コンテナ)
+random.randint(開始, 終了)
 
-time.sleep(second)
+time.sleep(秒)
 
-calendar.calendar(year)
-calendar.month(year, month)
+calendar.calendar(年)
+calendar.month(年, 月)
 
 datetime.datetime.now()
 datetime.datetime.now().year
@@ -83,24 +83,28 @@ datetime.datetime.now().hour
 datetime.datetime.now().minute
 datetime.datetime.now().second
 
-fractions.Fraction(numerator, denominator)
+fractions.Fraction(分子, 分母)
 
 sys.version
 sys.platform
 sys.argv
 
-os.system(command)
+os.system(コマンド)
 os.name()
-os.walk(directory)
+os.walk(フォルダ)
 os.getcwd()
-os.mkdir(directory)
-os.rename(old, new)
-os.rmdir(directory)
-os.remove(file)
+os.mkdir(フォルダ)
+os.rename(旧, 新)
+os.rmdir(フォルダ)
+os.remove(ファイル)
 
-webbrowser.get(browser).open(url)
-webbrowser.get(browser).open_new_tab(url)
+webbrowser.get(ブラウザ).open(url)
+webbrowser.get(ブラウザ).open_new_tab(url)
+
+urllib.request.urlopen(url).read()
+urllib.request.urlopen(url).close()
+
+numpy.array(リスト)
 
 # > pip install pyinstaller
-# > pip install pyinstaller
-# > pyinstaller file --onefile (--noconsole)
+# > pyinstaller ファイル --onefile (--noconsole)
