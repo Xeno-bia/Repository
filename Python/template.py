@@ -1,7 +1,7 @@
 # cmt
 
 import lib
-import math, random, time, calendar, datetime, fractions, sys, os
+import math, random, time, calendar, datetime, fractions, sys, os, webbrowser
 
 class Cls(sup):
     def __init__(self, arg):
@@ -98,5 +98,7 @@ os.mkdir(dir)
 os.rename(old, new)
 os.rmdir(dir)
 os.remove(file)
+
+webbrowser.open(url, num)
 
 # > py file

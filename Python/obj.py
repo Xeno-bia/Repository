@@ -30,5 +30,4 @@ import playsound
 import statistics
 import sympy
 import urllib
-import webbrowser
 '''
