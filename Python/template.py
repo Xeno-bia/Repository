@@ -1,26 +1,26 @@
-# cmt
+# comment
 
-import lib
+import library
 import math, random, time, calendar, datetime, fractions, sys, os, webbrowser
 
-class Cls(sup):
-    def __init__(self, arg):
+class Class(super):
+    def __init__(self, argument):
         pass
-    def method(self, arg):
+    def method(self, argument):
         pass
 
-ins = Cls(arg)
-ins.var
-ins.meth(arg)
+instance = Class(argument)
+instance.variable
+instance.method(argument)
 
 True, False
-int(num)
-float(num)
-range(bgn, end, step)
-str(f'str')
-list([val])
-dict({key: val})
-ctn[bgn: end: step]
+int(number)
+float(number)
+range(begin, end, step)
+str(f'string')
+list([value])
+dict({key: value})
+container[begin: end: step]
 
 x + x
 x - x
@@ -39,19 +39,19 @@ x and x
 x or x
 not x
 
-if cond:
+if condition:
     pass
-elif cond:
+elif condition:
     pass
 else:
     pass
 
-for var in ctn:
+for variable in container:
     pass
     continue
     break
 
-while cond:
+while condition:
     pass
     continue
     break
@@ -59,13 +59,13 @@ while cond:
 math.inf
 math.pi
 math.e
-math.sin(num)
-math.tan(num)
-math.cos(num)
-math.factorial(num)
-math.gcd(num, num)
-math.lcm(num, num)
-math.log(num, num)
+math.sin(number)
+math.tan(number)
+math.cos(number)
+math.factorial(number)
+math.gcd(number, number)
+math.lcm(number, number)
+math.log(number, base)
 
 random.choice(container)
 random.shuffle(container)
