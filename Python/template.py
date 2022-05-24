@@ -1,87 +1,123 @@
-# コメント
+#----------#
+# コメント #
+#----------#
+# コメント     # 1行
+'''コメント''' # 複数行
 
-import ライブラリ
+#------------#
+# ライブラリ #
+#------------#
+# > pip list                        # 一覧
+# > pip list --outdate              # 一覧(要更新)
+# > pip install ライブラリ          # インストール
+# > pip install --update ライブラリ # 更新
+# > pip-review --auto               # 更新(一括)
+# > pip show ライブラリ             # 情報
+from ライブラリ import *            # 呼び出し
 
-class クラス(親クラス):
-    def __init__(self, 引数):
-        処理
-    def メソッド(self, 引数):
-        処理
+#--------#
+# クラス #
+#--------#
+class クラス(親クラス):     # クラス定義
+def __init__(self, 引数):   # 変数定義
+def メソッド(self, 引数):   # メソッド定義
+オブジェクト = クラス(引数) # オブジェクト化
+オブジェクト.変数           # 変数呼び出し
+オブジェクト.メソッド(引数) # メソッド呼び出し
 
-インスタンス = クラス(引数)
-インスタンス.変数
-インスタンス.メソッド(引数)
+#----#
+# 型 #
+#----#
+True, False                    # 真偽値
+int(数値)                      # 整数
+float(数値)                    # 小数
+range(開始, 終了, 間隔)        # 連番
+str('文字列')                  # 文字列
+list([値])                     # 配列
+dict({キー: 値})               # 辞書
+f'{変数}'                      # 埋め込み
+オブジェクト[開始: 終了: 間隔] # 抽出
 
-True, False
-int(数値)
-float(数値)
-range(開始, 終了, 間隔)
-str(f'文字列')
-list([値])
-dict({キー: 値})
-コンテナ[開始: 終了: 間隔]
+#--------#
+# 演算子 #
+#--------#
+x + y   # 和
+x - y   # 差
+x * y   # 積
+x ** y  # 冪乗
+x / y   # 商
+x // y  # 整数商
+x % y   # 剰余
+x == y  # 等価
+x < y   # 未満
+x <= y  # 以下
+x > y   # 超過
+x >= y  # 以上
+x in y  # 包含
+x and y # 論理積
+x or y  # 論理和
+not x   # 論理否定
 
-x + x
-x - x
-x * x
-x ** x
-x / x
-x // x
-x % x
-x == x
-x < x
-x <= x
-x > x
-x >= x
-x in x
-x and x
-x or x
-not x
 
-if 条件:
-    処理
-elif 条件:
-    処理
-else:
-    処理
+#------#
+# 制御 #
+#------#
+if 条件:              # 分岐
+elif 条件:            # 分岐
+else:                 # 分岐
+for 変数 in コンテナ: # ループ
+    continue          # スキップ
+    break             # 終了
+while 条件:           # ループ
+    continue          # スキップ
+    break             # 終了
 
-for 変数 in コンテナ:
-    処理
-    continue
-    break
+#---------#
+# builtin #
+#---------#
 
-while 条件:
-    処理
-    continue
-    break
+#------#
+# math #
+#------#
+inf             # 無限大
+pi              # 円周率
+e               # ネイピア数
+sin(数値)       # サイン
+tan(数値)       # コサイン
+cos(数値)       # タンジェント
+factorial(数値) # 階乗
+gcd(数値, 数値) # 最大公約数
+lcm(数値, 数値) # 最小公倍数
+log(真数, 底数) # 対数
 
-math.inf
-math.pi
-math.e
-math.sin(数値)
-math.tan(数値)
-math.cos(数値)
-math.factorial(数値)
-math.gcd(数値, 数値)
-math.lcm(数値, 数値)
-math.log(真数, 底数)
+#--------#
+# random #
+#--------#
+choice(コンテナ)    # 選択
+shuffle(コンテナ)   # シャッフル
+randint(開始, 終了) # 乱数
 
-random.choice(コンテナ)
-random.shuffle(コンテナ)
-random.randint(開始, 終了)
+#------#
+# time #
+#------#
+sleep(秒) # 待機
 
-time.sleep(秒)
+#----------#
+# calendar #
+#----------#
+calendar(年)  # 年間
+month(年, 月) # 月間
 
-calendar.calendar(年)
-calendar.month(年, 月)
-
-datetime.datetime.now()
-datetime.datetime.now().year
-datetime.datetime.now().month
-datetime.datetime.now().day
-datetime.datetime.now().hour
-datetime.datetime.now().minute
-datetime.datetime.now().second
+#----------#
+# datetime #
+#----------#
+datetime.now()        # 現在日時
+datetime.now().year   # 年
+datetime.now().month  # 月
+datetime.now().day    # 日
+datetime.now().hour   # 時
+datetime.now().minute # 分
+datetime.now().second # 秒
 
 fractions.Fraction(分子, 分母)
 
@@ -105,6 +141,8 @@ urllib.request.urlopen(url).read()
 urllib.request.urlopen(url).close()
 
 numpy.array(リスト)
+
+icrawler.builtin.GoogleImageCrawler(storage = {'root_dir': フォルダ}).crawl(keyword = 検索内容, max_num = 件数)
 
 # > pip install pyinstaller
 # > pyinstaller ファイル --onefile (--noconsole)
