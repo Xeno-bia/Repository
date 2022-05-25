@@ -105,4 +105,52 @@ sum(x)     #合計
 enumerate(x) #連番付
 combinations(x) #組み合わせ
 permutations(x)#順列
+'''
+with open('txt.txt', mode='w', encoding='utf-8') as var: #ファイルを作成・上書き
+    var.write('')
+
+with open('txt.txt', mode='a', encoding='utf-8') as var: #ファイルに追記
+    var.write('')
+'''
+
+with open('txt.txt', mode='r', encoding='utf-8') as var: #ファイルを取得
+    var.read()
+
+from playsound import *
+playsound('mp3.mp3') #MP3を再生
+
+'''
+#pattern_matching
+match object:
+    case pattern:
+        pass
+    case _:
+        pass
+'''
+
+#ログ
+from logging import basicConfig,DEBUG,INFO,WARNING,ERROR,CRITICAL,debug,info,warning,error,critical
+basicConfig(filename=file,level=level,format=format)
+debug(メッセージ)
+info(メッセージ)
+warning(メッセージ)
+error(メッセージ)
+critical(メッセージ)
+
+'''
+janome.tokenizer(Tokenizer, .tokenize, .surface)
+'''
+
+#例外送出
+raise exp('msg')
+
+#例外処理
+try:
+    ...
+except exp:
+    ...
+else:
+    ...
+finally:
+    ...
 #pyinstaller Pythonファイル --onefile --noconsole --icon = アイコン

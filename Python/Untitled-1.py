@@ -1,64 +1,160 @@
-'''
-with open('txt.txt', mode='w', encoding='utf-8') as var: #ファイルを作成・上書き
-    var.write('')
+#--------#
+#コメント#
+#--------#
+#コメント
+'''コメント'''
 
-with open('txt.txt', mode='a', encoding='utf-8') as var: #ファイルに追記
-    var.write('')
-'''
+#----------#
+#ライブラリ#
+#----------#
+$ pip list
+$ pip install ライブラリ
+$ pip-review --auto
+import ライブラリ
+from ライブラリ import *
 
-with open('txt.txt', mode='r', encoding='utf-8') as var: #ファイルを取得
-    var.read()
+#------#
+#クラス#
+#------#
+class クラス(親クラス):
+    def __init__(self, 引数):
+        self.インスタンス変数 = 内容
+    def メソッド(self, 引数):
+        ...
+オブジェクト = クラス(引数)
+オブジェクト.インスタンス変数
+オブジェクト.メソッド(引数)
 
-from playsound import *
-playsound('mp3.mp3') #MP3を再生
+#----#
+#変数#
+#----#
+変数 = 内容
 
-list().append(x)       #追加
-list().insert(x)       #追加
-del x          #削除
-list().reverse()      #反転
-list().sort()         #並べ替え
-
-set().add(x) #追加
-del x               #削除
-set() | set() #連結
-
-dict().keys()#キーリスト
-dict().values()#値リスト
-dict().items() #キー・値リスト
-del x #削除
-dict() | dict() #連結
-
-'''
-#pattern_matching
-match object:
-    case pattern:
-        pass
-    case _:
-        pass
-'''
-
-#ログ
-from logging import basicConfig,DEBUG,INFO,WARNING,ERROR,CRITICAL,debug,info,warning,error,critical
-basicConfig(filename=file,level=level,format=format)
-debug(メッセージ)
-info(メッセージ)
-warning(メッセージ)
-error(メッセージ)
-critical(メッセージ)
-
-'''
-janome.tokenizer(Tokenizer, .tokenize, .surface)
-'''
-
-#例外送出
-raise exp('msg')
-
-#例外処理
-try:
+#----#
+#関数#
+#----#
+def 関数(引数):
     ...
-except exp:
-    ...
+関数(引数)
+
+#--#
+#型#
+#--#
+bool(真偽値)
+True
+False
+
+数値
+int(整数)
+1
+float(小数)
+1.0
+数値 + 数値
+数値 - 数値
+数値 * 数値
+数値 ** 数値
+数値 / 数値
+数値 // 数値
+数値 % 数値
+
+連番
+range(開始, 終了, 間隔)
+
+str(文字列)
+'1'
+f'{埋め込み}'
+'\\'
+'\''
+'\n'
+
+list(リスト)
+[1]
+リスト.append(値)
+リスト.pop(インデックス)
+リスト + リスト
+
+set(集合)
+{1}
+集合.add(値)
+集合.remove(値)
+集合 | 集合
+
+dict(辞書)
+{1: '1'}
+辞書[キー] = 値
+辞書.pop(キー)
+辞書 | 辞書
+辞書.keys()
+辞書.values()
+
+'''文字列内をインデックス指定'''
+文字列[インデックス]
+
+'''文字列内をスライス指定'''
+文字列[開始: 終了: 間隔]
+
+'''辞書内をキーで指定'''
+辞書[キー]
+
+'''コンテナを昇順に並べ替え'''
+コンテナ.sort()
+
+'''コンテナを降順に並べ替え'''
+コンテナ.sort(reverse = True)
+
+'''大小を比較(等価)'''
+オブジェクト == オブジェクト
+
+'''大小を比較(未満)'''
+オブジェクト < オブジェクト
+
+'''大小を比較(以下)'''
+オブジェクト <= オブジェクト
+
+'''大小を比較(超過)'''
+オブジェクト > オブジェクト
+
+'''大小を比較(以上)'''
+オブジェクト >= オブジェクト
+
+'''包含を確認'''
+オブジェクト in オブジェクト
+
+'''論理積を取得'''
+オブジェクト and オブジェクト
+
+'''論理和を取得'''
+オブジェクト or オブジェクト
+
+'''式を否定'''
+not 式
+
+'''ファイルを操作'''
+with ファイル as 変数:
+    処理
+
+'''処理を分岐'''
+if 条件:
+    処理
+elif 条件:
+    処理
 else:
-    ...
-finally:
-    ...
+    処理
+
+'''コンテナ内をループ'''
+for 変数 in コンテナ:
+    処理
+    continue
+    break
+
+'''条件成立中に処理をループ'''
+while 条件:
+    処理
+    continue
+    break
+
+'''オブジェクトを出力'''
+print(出力内容, sep = 区切り, end = 末尾)
+
+'''入力を取得'''
+input(入力ヒント)
