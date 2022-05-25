@@ -104,16 +104,3 @@ critical(メッセージ)
 '''
 janome.tokenizer(Tokenizer, .tokenize, .surface)
 '''
-
-#例外送出
-raise exp('msg')
-
-#例外処理
-try:
-    ...
-except exp:
-    ...
-else:
-    ...
-finally:
-    ...

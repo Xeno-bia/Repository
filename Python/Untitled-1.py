@@ -1,21 +1,34 @@
-#ライブラリ
-$ pip list          # ライブラリ一覧
-$ pip install a     # ライブラリインストール
-$ pip-review --auto # ライブラリアップデート
-import a            # ライブラリ呼び出し
+# コマンド
+'''
+$ pip list                                            # ライブラリ一覧
+$ pip install lib                                     # ライブラリインストール
+$ pip-review --auto                                   # ライブラリアップデート
+$ py xxx.py                                           # 実行
+$ pyinstaller xxx.py --onefile --noconsole --icon=img # EXE化
+'''
 
-#クラス
-class a(b):         # クラス作成
-    a = b           # フィールド作成
-    def a(self, b): # メソッド作成
-        c
-a = b(c)            # オブジェクト作成
-a.b                 # フィールド呼び出し
-a.b(c)              # メソッド呼び出し
+# ライブラリ
+import lib # ライブラリ呼び出し
 
-a       # 数値
-f'a{b}' # 文字列
-[a]     # リスト
+# 変数
+var = xxx # 変数作成
+var       # 変数呼び出し
+
+# 関数
+def func(arg): # 関数作成
+    xxx
+    return rtn # 戻り値
+func(arg)      # 関数呼び出し
+
+# クラス
+class Cls(sup):          # クラス作成
+    fld = xxx            # フィールド作成
+    def meth(self, arg): # メソッド作成
+        xxx
+obj = Cls(arg)           # オブジェクト作成
+obj.fld                  # フィールド呼び出し
+obj.meth(arg)            # メソッド呼び出し
+
 
 a.replace(b, c)      # 置換
 a.split(b)           # 分割
@@ -23,50 +36,36 @@ a.append(b)          # 追加
 a.remove(b)          # 削除
 a.sort()             # 昇順
 a.sort(reverse=True) # 降順
-a.count(b)           # 個数
 
-input()         # 入力
-print(a, sep=b) # 出力
-range(a, b, c)  # 連番
-len(a)          # 長さ
-sum(a)          # 合計
-max(a)          # 最大値
-min(a)          # 最小値
+# 演算子
+x in y  # 包含
 
-a + b   # 足し算
-a - b   # 引き算
-a * b   # 掛け算
-a ** b  # 累乗
-a / b   # 割り算
-a % b   # 余り
-a == b  # イコール
-a < b   # 小なり
-a <= b  # 小なりイコール
-a > b   # 大なり
-a >= b  # 大なりイコール
-a in b  # 含む
-a and b # かつ
-a or b  # または
-not a   # ではない
+# 文
+with file as var: # ファイル
+    xxx
 
-with a as b: # ファイル
-    c
+if con:           # 分岐
+    xxx
+elif con:
+    xxx
+else:
+    xxx
 
-if a:   # もし-なら
-    b
-elif a: # でなければもし-なら
-    b
-else:   # でなければ
-    a
+for i in ctn:     # コンテナループ
+    xxx
+    continue      # スキップ
+    break         # 終了
 
-for a in b:  # -の分繰り返す
-    c
-    continue # スキップ
-    break    # 終了
+while con:        # 条件ループ
+    xxx
+    continue      # スキップ
+    break         # 終了
 
-while a:     # -の間繰り返す
-    b
-    continue # スキップ
-    break    # 終了
+raise exc(msg)    # 例外送出
 
-$ pyinstaller a --onefile --noconsole --icon=アイコン # EXE化
+try:              # 例外処理
+    xxx
+except exc:
+    xxx
+else:
+    xxx
