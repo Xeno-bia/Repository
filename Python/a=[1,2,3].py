@@ -1,2 +1,4 @@
-a=[1,2,3]
-print(a.sort(),sorted(a))
+class A:         # クラス作成
+    a = 1           # フィールド作成
+o = A()            # オブジェクト作成
+print(o.a)                 # フィールド呼び出し
