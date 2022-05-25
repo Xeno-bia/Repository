@@ -81,7 +81,7 @@ combinations(x) #組み合わせ
 permutations(x)#順列
 
 from playsound import *
-playsound('mp3') #MP3を再生
+playsound(mp3) #MP3を再生
 
 '''
 #pattern_matching
@@ -94,7 +94,7 @@ match object:
 
 #ログ
 from logging import basicConfig,DEBUG,INFO,WARNING,ERROR,CRITICAL,debug,info,warning,error,critical
-basicConfig(filename=file,level=level,format=format)
+basicConfig(filename=file, level=level, format=format)
 debug(メッセージ)
 info(メッセージ)
 warning(メッセージ)
@@ -117,4 +117,3 @@ else:
     ...
 finally:
     ...
-#pyinstaller Pythonファイル --onefile --noconsole --icon = アイコン
