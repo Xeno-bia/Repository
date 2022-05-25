@@ -77,47 +77,11 @@ expand(x)                                                           #展開
 factor(x)                                                           #因数分解
 diff(x)                                                             #微分
 integrate(x)                                                        #積分
-x.count(x)        #個数
-x.startswith(x)   #先頭判定
-x.endswith(x)     #末尾判定
-x.isalnum()      #英数字判定
-x.isdecimal()    #数字判定
-x.isalpha()      #英字判定
-x.isupper()      #大文字判定
-x.islower()      #小文字判定
-x.istitle()      #パスカル判定
-x.replace(x)      #置換
-x.split(x)        #分割
-x.upper()        #大文字化
-x.lower()        #小文字化
-x.title()        #パスカル化
-x.index()        #位置
-x.zfill()        #ゼロ埋め
-abs(x)            #絶対値
-all(x)       #論理積
-any(x)       #論理和
-len(x)       #長さ
-max(x)       #最大値
-min(x)       #最小値
-round(x)       #偶数丸め
-sorted(x)   #並べ替え
-sum(x)     #合計
-enumerate(x) #連番付
 combinations(x) #組み合わせ
 permutations(x)#順列
-'''
-with open('txt.txt', mode='w', encoding='utf-8') as var: #ファイルを作成・上書き
-    var.write('')
-
-with open('txt.txt', mode='a', encoding='utf-8') as var: #ファイルに追記
-    var.write('')
-'''
-
-with open('txt.txt', mode='r', encoding='utf-8') as var: #ファイルを取得
-    var.read()
 
 from playsound import *
-playsound('mp3.mp3') #MP3を再生
+playsound('mp3') #MP3を再生
 
 '''
 #pattern_matching
