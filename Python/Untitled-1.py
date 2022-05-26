@@ -1,23 +1,12 @@
 '''
-コマンド
 コメント
-ライブラリ
-リテラル
-演算子
-文
-変数・関数
-クラス(フィールド・メソッド)
-'''
-
-#----------#
-# コマンド #
-#----------#
-'''
-$ pip list
-$ pip install lib
-$ pip-review --auto
-$ py xxx.py
-$ pyinstaller xxx.py --onefile --noconsole --icon=img
+ライブラリ(一覧, インストール, アップデート, インポート)
+リテラル(整数, 小数, 文字列, リスト, 辞書)
+演算子(算術, 比較, 論理)
+文(if, for, while, with, raise, try-except)
+変数, 関数
+クラス(フィールド, メソッド)
+実行
 '''
 
 #----------#
@@ -28,6 +17,9 @@ $ pyinstaller xxx.py --onefile --noconsole --icon=img
 #------------#
 # ライブラリ #
 #------------#
+# $ pip list
+# $ pip install lib
+# $ pip-review --auto
 from lib import *
 
 #----------#
@@ -105,9 +97,8 @@ func(arg)
 # クラス(フィールド・メソッド) #
 #------------------------------#
 class Cls(sup):
-    fld = xxx
     def __init__(self, arg):
-        xxx
+        self.fld = xxx
         return rtn
     def meth(self, arg):
         xxx
@@ -115,3 +106,9 @@ class Cls(sup):
 obj = Cls(arg)
 obj.fld
 obj.meth(arg)
+
+#------#
+# 実行 #
+#------#
+# $ py xxx.py
+# $ pyinstaller xxx.py --onefile --noconsole --icon=img
