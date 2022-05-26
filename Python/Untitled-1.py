@@ -8,6 +8,7 @@
 変数・関数
 クラス(フィールド・メソッド)
 '''
+
 #----------#
 # コマンド #
 #----------#
@@ -32,11 +33,11 @@ from lib import *
 #----------#
 # リテラル #
 #----------#
-int
-flt
-'str'
-[val]
-{key: val}
+1
+1.0
+'1'
+[1]
+{1: 1}
 
 #--------#
 # 演算子 #
@@ -61,8 +62,6 @@ not x
 #----#
 # 文 #
 #----#
-return rtn
-
 if con:
     xxx
 elif con:
@@ -98,6 +97,7 @@ else:
 var = xxx
 def func(arg):
     xxx
+    return rtn
 var
 func(arg)
 
@@ -106,8 +106,12 @@ func(arg)
 #------------------------------#
 class Cls(sup):
     fld = xxx
+    def __init__(self, arg):
+        xxx
+        return rtn
     def meth(self, arg):
         xxx
+        return rtn
 obj = Cls(arg)
 obj.fld
 obj.meth(arg)
