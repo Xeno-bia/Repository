@@ -104,3 +104,30 @@ critical(メッセージ)
 '''
 janome.tokenizer(Tokenizer, .tokenize, .surface)
 '''
+
+a.append(b)          # 追加
+a.remove(b)          # 削除
+a.sort()             # 昇順
+a.sort(reverse=True) # 降順
+
+from builtins import *              # 組み込みライブラリ
+builtins.print(xxx, sep=sep) #     出力関数
+builtins.input(msg)          #     入力関数
+builtins.max(ctn)            #     最大値関数
+builtins.min(ctn)            #     最小値関数
+builtins.sum(ctn)            #     合計関数
+
+int = builtins.int(num)      #     整数オブジェクト
+
+float = builtins.float(num)  #     小数オブジェクト
+
+str = builtins.str('str')    #     文字列オブジェクト
+str.count(str)               #         個数メソッド
+str.replace(old, new)        #         置換メソッド
+str.split(sep)               #         分割メソッド
+
+builtins.list(xxx)           #     リストオブジェクト
+
+builtins.dict(xxx)           #     辞書オブジェクト
+
+builtins.range(b, e, s)      #     連番オブジェクト
