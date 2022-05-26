@@ -6,7 +6,7 @@
 文(if, for, while, with, raise, try-except)
 変数, 関数
 クラス(フィールド, メソッド)
-実行
+実行(.py, .exe)
 '''
 
 #----------#
