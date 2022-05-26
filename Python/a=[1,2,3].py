@@ -1,114 +1,22 @@
-'''
-コメント
-ライブラリ
-リテラル
-演算子
-文
-変数, 関数
-クラス(フィールド, メソッド)
-実行
-'''
+コメント   #
+型         int, float, str, list, dict
+文         with/as, if/elif/else, for/in/continue/break, while/continue/break, try/except
+ライブラリ import
+変数       var
+関数       def/return
+クラス     class
+メンバ変数 __init__/self
+メンバ関数 def/return
 
-#----------#
-# コメント #
-#----------#
-# コメント
 
-#------------#
-# ライブラリ #
-#------------#
-# $ pip list
-# $ pip install ライブラリ
-# $ pip-review --auto
-from ライブラリ import *
 
-#----------#
-# リテラル #
-#----------#
-整数 = 1
-小数 = 1.0
-文字列 = '1'
-リスト = [1]
-辞書 = {1: 1}
-
-#--------#
-# 演算子 #
-#--------#
-x + y
-x - y
-x * y
-x ** y
-x / y
-x // y
-x % y
-x == y
-x < y
-x <= y
-x > y
-x >= y
-x in y
-x and y
-x or y
-not x
-
-#----#
-# 文 #
-#----#
-if 条件:
-    処理
-elif 条件:
-    処理
-else:
-    処理
-
-for 変数 in コンテナ:
-    処理
-    continue
-    break
-
-while 条件:
-    処理
-    continue
-    break
-
-with ファイル as 変数:
-    処理
-
-raise 例外(メッセージ)
-
-try:
-    処理
-except 例外:
-    処理
-else:
-    処理
-
-#------------#
-# 変数・関数 #
-#------------#
-変数 = 値
-def 関数(引数):
-    処理
-    return 戻り値
-変数
-関数(引数)
-
-#------------------------------#
-# クラス(フィールド・メソッド) #
-#------------------------------#
-class クラス(親クラス):
-    def __init__(self, 引数):
-        self.フィールド = 値
-        return 戻り値
-    def メソッド(self, 引数):
-        処理
-        return 戻り値
-オブジェクト = クラス(引数)
-オブジェクト.フィールド
-オブジェクト.メソッド(引数)
-
-#------#
-# 実行 #
-#------#
-# $ py Pythonファイル
-# $ pyinstaller Pythonファイル --onefile --noconsole --icon=アイコン
+import math
+# 変数
+math.inf       # ∞
+math.pi        # π
+# 関数
+math.sin(x)    # sin
+math.tan(x)    # cos
+math.cos(x)    # tan
+math.gcd(x, x) # 最大公約数
+math.lcm(x, x) # 最小公倍数

@@ -24,16 +24,6 @@ import logging
 import MeCab
 import playsound
 '''
-inf             #無限大
-pi              #円周率
-e               #ネイピア数
-sin(x)       #サイン
-tan(x)       #コサイン
-cos(x)       #タンジェント
-factorial(x)                                                        #階乗
-gcd(x, x)                                                           #最大公約数
-lcm(x, x)                                                           #最小公倍数
-log(x, x)                                                           #対数
 mean(x)                                                             #平均
 median(x)                                                           #中央値
 mode(x)                                                             #最頻値
