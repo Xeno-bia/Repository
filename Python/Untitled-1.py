@@ -1,35 +1,35 @@
 '''
 コメント
-ライブラリ(一覧, インストール, アップデート, インポート)
-リテラル(整数, 小数, 文字列, リスト, 辞書)
-演算子(算術, 比較, 論理)
-文(if, for, while, with, raise, try-except)
+ライブラリ
+リテラル
+演算子
+文
 変数, 関数
 クラス(フィールド, メソッド)
-実行(.py, .exe)
+実行
 '''
 
 #----------#
 # コメント #
 #----------#
-# cmt
+# コメント
 
 #------------#
 # ライブラリ #
 #------------#
 # $ pip list
-# $ pip install lib
+# $ pip install ライブラリ
 # $ pip-review --auto
-from lib import *
+from ライブラリ import *
 
 #----------#
 # リテラル #
 #----------#
-1
-1.0
-'1'
-[1]
-{1: 1}
+整数 = 1
+小数 = 1.0
+文字列 = '1'
+リスト = [1]
+辞書 = {1: 1}
 
 #--------#
 # 演算子 #
@@ -54,61 +54,61 @@ not x
 #----#
 # 文 #
 #----#
-if con:
-    xxx
-elif con:
-    xxx
+if 条件:
+    処理
+elif 条件:
+    処理
 else:
-    xxx
+    処理
 
-for i in ctn:
-    xxx
+for 変数 in コンテナ:
+    処理
     continue
     break
 
-while con:
-    xxx
+while 条件:
+    処理
     continue
     break
 
-with file as var:
-    xxx
+with ファイル as 変数:
+    処理
 
-raise exc(msg)
+raise 例外(メッセージ)
 
 try:
-    xxx
-except exc:
-    xxx
+    処理
+except 例外:
+    処理
 else:
-    xxx
+    処理
 
 #------------#
 # 変数・関数 #
 #------------#
-var = xxx
-def func(arg):
-    xxx
-    return rtn
-var
-func(arg)
+変数 = 値
+def 関数(引数):
+    処理
+    return 戻り値
+変数
+関数(引数)
 
 #------------------------------#
 # クラス(フィールド・メソッド) #
 #------------------------------#
-class Cls(sup):
-    def __init__(self, arg):
-        self.fld = xxx
-        return rtn
-    def meth(self, arg):
-        xxx
-        return rtn
-obj = Cls(arg)
-obj.fld
-obj.meth(arg)
+class クラス(親クラス):
+    def __init__(self, 引数):
+        self.フィールド = 値
+        return 戻り値
+    def メソッド(self, 引数):
+        処理
+        return 戻り値
+オブジェクト = クラス(引数)
+オブジェクト.フィールド
+オブジェクト.メソッド(引数)
 
 #------#
 # 実行 #
 #------#
-# $ py xxx.py
-# $ pyinstaller xxx.py --onefile --noconsole --icon=img
+# $ py Pythonファイル
+# $ pyinstaller Pythonファイル --onefile --noconsole --icon=アイコン
