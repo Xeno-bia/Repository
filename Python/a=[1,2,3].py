@@ -1,15 +1,3 @@
-コメント   #
-型         int, float, str, list, dict
-文         with/as, if/elif/else, for/in/continue/break, while/continue/break, try/except
-ライブラリ import
-変数       var
-関数       def/return
-クラス     class
-メンバ変数 __init__/self
-メンバ関数 def/return
-
-
-
 import math
 # 変数
 math.inf       # ∞

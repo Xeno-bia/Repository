@@ -73,15 +73,6 @@ permutations(x)#順列
 from playsound import *
 playsound(mp3) #MP3を再生
 
-'''
-#pattern_matching
-match object:
-    case pattern:
-        pass
-    case _:
-        pass
-'''
-
 #ログ
 from logging import basicConfig,DEBUG,INFO,WARNING,ERROR,CRITICAL,debug,info,warning,error,critical
 basicConfig(filename=file, level=level, format=format)
@@ -91,9 +82,10 @@ warning(メッセージ)
 error(メッセージ)
 critical(メッセージ)
 
-'''
-janome.tokenizer(Tokenizer, .tokenize, .surface)
-'''
+from janome.tokenizer import Tokenizer
+for i in Tokenizer().tokenize(文字列):
+    print(i)
+    print(i.surface)
 
 a.append(b)          # 追加
 a.remove(b)          # 削除
