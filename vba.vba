@@ -1,64 +1,117 @@
-'初期設定
-'@Excel
-'[ファイル] → [オプション] → [リボンのユーザー設定] → [開発]
+Option Explicit
 
-'エディタ
-'@Excel
-'[開発] → [Visual Basic]
+'開発タブを表示
+'[ファイル]→[オプション]→[リボンのユーザー設定]→[開発]
 
-'モジュール
-'@エディタ
-'[挿入] → [標準モジュール]
+'エディタを起動
+'[開発]→[Visual Basic]
 
-'変数
-Dim 変数  '宣言
-変数 = 値 '書き込み
-変数      '読み込み
+'モジュールを作成
+'[挿入]→[標準モジュール]
 
-'ブック
-Workbooks.Add                                                                                        '新規作成
-Workbooks("ブック")                                                                             '読み込み
-.SaveAs Filename:="ブック", Password:="読み込みパスワード", WriteResPassword:="書き込みパスワード" '新規保存
-.Save                                                                                              '上書き保存
-
-'シート
-Worksheets.Add Before or After:=Worksheets("基準シート") '追加
-Worksheets("シート")                                '読み込み
-.Name = "シート"                                       '名前
-.Move Before or After:=Worksheets("基準シート")        '移動
-.Copy Before or After:=Worksheets("基準シート")        'コピー
-.Delete                                                '削除
-
-'実行
-'[F5]
-
+'保存
+'拡張子を.xlsmにする
 
 Sub プロシージャ()
-    Range("A1")                           'セル
-        .Value = "Hello World"            '    値
-        .Font                             '    フォント
-            .Name          = "游ゴシック" '        種類
-            .Size          = 8            '        サイズ
-            .ColorIndex    = 1            '        色
-            .Bold          = True         '        太字
-            .Italic        = True         '        斜体
-            .Underline     = True         '        下線
-            .Strikethrough = True         '        打ち消し線
-            .Superscript   = True         '        上付き
-            .Subscript     = True         '        下付き
-        .Borders                          '    罫線
-            .LineStyle  = xlContinuous    '        種類
-            .ColorIndex = 1               '        色
-        .HorizontalAlignment = xlCenter   '    水平位置
-        .VerticalAlignment   = xlCenter   '    垂直位置
-        .Interior                         '    背景
-            .ColorIndex = 色              '        色
-        .Select                           '    選択
-            Selection                     '        読み込み
-        .MergeCells = True                '    結合
-        .Copy                             '    コピー
-        .ClearContents                    '    値削除
-        .Delete Shift:=xlShiftUp          '    削除
-    ActiveSheet                           'シート
-        .Paste                            '    ペースト
+    '出力(イミディエイトウィンドウ)
+    出力内容
+    
+    '型
+    x     '数値(整数)
+    x.x   '数値(小数)
+    "x"   '文字列
+    True  '真偽値(真)
+    False '真偽値(偽)
+
+    '演算子
+        '算術
+        x + x   '加算
+        x - x   '減算
+        x * x   '乗算
+        x ^ x   '冪乗
+        x / x   '除算
+        x \ x   '整数除算
+        x Mod x '剰余
+        
+        '連結
+        x & x
+
+        '比較
+        x = x  '等価
+        x <> x '不等価
+        x < x  '未満
+        x <= x '以下
+        x > x  '超過
+        x >= x '以上
+
+        'Like
+        x Like "?"      '1文字
+        x Like "#"      '1文字(数字)
+        x Like "*"      '0-1文字
+        x Like "[x-x]"  '範囲内の1文字
+        x Like "[!x-x]" '範囲外の1文字
+
+        '論理
+        x And x '論理積
+        x Or x  '論理和
+        x Xor x '排他的論理和
+        Not x   '論理否定
+
+    '変数
+    Dim x '宣言
+    x = x '代入
+    x     '呼び出し
+    
+    '入力
+    InputBox("x")
+
+    '判定
+    IsNumeric(x) '数値
+    IsDate(x)    '日付
+    IsArray(x)   '配列
+    IsError(x)   'エラー
+    IsEmpty(x)   '空白
+
+
+    '分岐
+    If x Then
+        x
+    ElseIf x Then
+        x
+    Else
+        x
+    End If
+
+    '繰り返し
+        '回数
+        For x = x To x Step x
+            x
+            Exit For
+        Next
+
+        '配列
+        For Each x In x
+            x
+            Exit For
+        Next
+
+        '条件(～の間)
+        Do While x
+            x
+            x = x + 1
+            Exit Do
+        Loop
+
+        '条件(～まで)
+        Do Until x
+            x
+            x = x + 1
+            Exit Do
+        Loop
+
+    '配列
+    x = Array(x)    '作成
+    x(x)            '呼び出し
+    Split("x", "x") '文字列→配列
+    Join(x)         '配列→文字列
 End Sub
