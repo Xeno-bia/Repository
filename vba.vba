@@ -1,5 +1,3 @@
-Option Explicit
-
 '開発タブを表示
 '[ファイル]→[オプション]→[リボンのユーザー設定]→[開発]
 
@@ -12,10 +10,14 @@ Option Explicit
 '保存
 '拡張子を.xlsmにする
 
-Sub プロシージャ()
-    '出力(イミディエイトウィンドウ)
-    出力内容
-    
+'プロシージャ
+Sub x()
+    '出力
+    Debug.Print x 'イミディエイトウィンドウ
+
+    '入力
+    InputBox("x")
+
     '型
     x     '数値(整数)
     x.x   '数値(小数)
@@ -62,9 +64,6 @@ Sub プロシージャ()
     x = x '代入
     x     '呼び出し
     
-    '入力
-    InputBox("x")
-
     '判定
     IsNumeric(x) '数値
     IsDate(x)    '日付
@@ -113,5 +112,5 @@ Sub プロシージャ()
     x = Array(x)    '作成
     x(x)            '呼び出し
     Split("x", "x") '文字列→配列
-    Join(x)         '配列→文字列
+    Join(x, "x")    '配列→文字列
 End Sub
